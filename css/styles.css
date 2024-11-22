@@ -1,3 +1,4 @@
+/* Загальні стилі */
 h1,
 h2,
 h3,
@@ -14,21 +15,13 @@ ul {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin-bottom: 16px;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.section {
-  padding: 120px 0; /* B15 */
-}
-
+/* Контейнер */
 .container {
   width: 1158px;
   max-width: 100%;
@@ -36,16 +29,93 @@ ul {
   padding: 0 15px;
 }
 
-.header,
-.footer {
+/* Хедер */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  background-color: #ffffff;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px;
+  text-decoration: none;
+}
+
+.logo-span {
+  color: #2e2f42;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+  padding: 24px 0;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #404bbf;
+}
+
+.header-contacts {
+  display: flex;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  text-decoration: none;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: #404bbf;
+}
+
+/* Головна секція (Hero Section) */
 .hero-section {
   background-color: #2e2f42;
-  padding: 60px 0; /* Відступи секції згідно з макетом */
+  padding: 60px 0;
 }
 
 .hero-title {
@@ -54,88 +124,6 @@ ul {
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-section {
-  margin: 0;
-}
-
-.portfolio-card {
-  border-bottom: 1px solid #ddd;
-}
-
-.header {
-  border-bottom: 1px solid #ddd;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-}
-
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-}
-
-.logo-span {
-  color: #2e2f42;
-}
-
-.nav-item {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.nav-item:hover,
-.nav-item:focus {
-  color: #404bbf;
-}
-
-.contact {
-  font-style: normal;
-}
-
-.contact-item {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-.contact-item:hover,
-.contact-item:focus {
-  color: #404bbf;
-}
-
-.hero-section {
-  background-color: #2e2f42;
-}
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
 }
 
 .hero-button {
@@ -147,11 +135,17 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  padding: 10px 20px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+}
+
+/* Секція сервісів */
+.section {
+  padding: 120px 0;
 }
 
 .service-title {
@@ -169,6 +163,7 @@ body {
   color: #434455;
 }
 
+/* Секція команди */
 .team-section {
   background-color: #f4f4fd;
 }
@@ -201,6 +196,7 @@ body {
   color: #434455;
 }
 
+/* Секція портфоліо */
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -208,6 +204,10 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+
+.portfolio-card {
+  border-bottom: 1px solid #ddd;
 }
 
 .portfolio-product-title {
@@ -225,8 +225,10 @@ body {
   color: #434455;
 }
 
+/* Футер */
 .footer {
   background-color: #2e2f42;
+  padding: 20px 0;
 }
 
 .footer-logo {
@@ -237,7 +239,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  /* Колір логотипу */
   text-decoration: none;
   margin-bottom: 15px;
 }
