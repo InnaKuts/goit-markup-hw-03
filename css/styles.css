@@ -206,7 +206,9 @@ img {
 }
 
 /* Секція команди */
+/* Секція команди (Team Section) */
 .team-section {
+  padding: 120px 0; /* Відступи всередині секції */
   background-color: #f4f4fd;
 }
 
@@ -215,26 +217,49 @@ img {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px; /* Відступ між заголовком і списком */
 }
 
-.team-member {
+.team-list {
+  display: flex; /* Горизонтальне розташування елементів */
+  gap: 24px; /* Відступи між елементами списку */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-item {
+  flex-basis: calc((100% - 3 * 24px) / 4); /* Ширина елементів */
+  text-align: center;
+  border-radius: 0 0 4px 4px; /* Заокруглення нижніх кутів */
+  overflow: hidden; /* Щоб уникнути виходу контенту за межі */
   background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тінь для картки */
 }
 
-.team-member-name {
-  font-weight: 500;
+.team-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team-info {
+  padding: 32px 0; /* Відступи всередині контейнера */
+}
+
+.team-name {
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px; /* Відступ між ім'ям і роллю */
 }
 
-.team-member-role {
+.team-role {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  text-align: center;
   color: #434455;
 }
 
