@@ -1,3 +1,73 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-bottom: 16px;
+}
+
+.section {
+  padding: 120px 0; /* B15 */
+}
+
+.container {
+  width: 1158px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section {
+  background-color: #2e2f42;
+  padding: 60px 0; /* Відступи секції згідно з макетом */
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+section {
+  margin: 0;
+}
+
+.portfolio-card {
+  border-bottom: 1px solid #ddd;
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+}
+
 ul {
   list-style: none;
 }
