@@ -39,7 +39,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 0 15px;
 }
 
 .header-nav {
@@ -112,35 +112,46 @@ img {
   color: #404bbf;
 }
 
-/* Головна секція (Hero Section) */
+/* Перша секція (Hero Section) */
 .hero-section {
-  background-color: #2e2f42;
-  padding: 60px 0;
+  background-color: #2e2f42; /* Темний фон */
+  padding: 188px 0; /* Відступи всередині секції */
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   color: #ffffff;
-  margin-bottom: 20px;
+  max-width: 496px; /* Ширина тексту заголовка */
+  margin-bottom: 40px; /* Відступ від заголовка до кнопки */
 }
 
 .hero-button {
+  display: block; /* Для центрування через margin */
+  min-width: 169px; /* Мінімальна ширина кнопки */
+  height: 56px; /* Висота кнопки */
+  border: none; /* Вимкнення стандартного оформлення */
+  background-color: var(--btn-bg-color, #4d5ae5); /* Фон кнопки */
+  border-radius: 4px; /* Заокруглення країв */
+  color: #ffffff; /* Колір тексту */
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  background-color: #4d5ae5;
   line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 10px 20px;
+  cursor: pointer; /* Зміна курсора */
+  padding: 0 20px; /* Внутрішні відступи */
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf;
+  background-color: #404bbf; /* Темніший фон при ховері */
 }
 
 /* Секція сервісів */
