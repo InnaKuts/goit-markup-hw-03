@@ -264,31 +264,60 @@ img {
 }
 
 /* Секція портфоліо */
+.portfolio-section {
+  padding: 120px 0; /* Відступи всередині секції */
+}
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px; /* Відступ між заголовком і списком */
 }
 
-.portfolio-card {
-  border-bottom: 1px solid #ddd;
+.portfolio-list {
+  display: flex; /* Горизонтальне розташування елементів */
+  flex-wrap: wrap; /* Перенос на новий рядок при нестачі місця */
+  column-gap: 24px; /* Горизонтальні відступи між елементами */
+  row-gap: 48px; /* Вертикальні відступи між елементами */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3); /* Ширина елемента списку */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 4px 4px; /* Заокруглення нижніх кутів */
+  overflow: hidden; /* Щоб уникнути виходу контенту */
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-info {
+  padding: 32px 16px; /* Відступи всередині контейнера */
+  border: 1px solid #e7e9fc; /* Обведення */
+  border-top: none; /* Видалення верхнього обведення */
+  text-align: center;
 }
 
 .portfolio-product-title {
-  font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 500;
   color: #2e2f42;
+  margin-bottom: 8px; /* Відступ між заголовком і текстом */
 }
 
 .portfolio-product-category {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
 }
 
