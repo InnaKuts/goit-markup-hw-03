@@ -350,6 +350,7 @@ img {
 }
 
 .footer-logo-span {
+  display: inline-block; /* Блочні властивості для посилання */
   color: #f4f4fd; /* Колір другої частини тексту логотипа */
 }
 
