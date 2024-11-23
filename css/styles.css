@@ -1,4 +1,3 @@
-/* Загальні стилі */
 h1,
 h2,
 h3,
@@ -21,7 +20,6 @@ img {
   height: auto;
 }
 
-/* Контейнер */
 .container {
   width: 1158px;
   max-width: 100%;
@@ -29,7 +27,6 @@ img {
   padding: 0 15px;
 }
 
-/* Хедер */
 .header {
   border-bottom: 1px solid #e7e9fc;
   background-color: #ffffff;
@@ -112,10 +109,9 @@ img {
   color: #404bbf;
 }
 
-/* Перша секція (Hero Section) */
 .hero-section {
-  background-color: #2e2f42; /* Темний фон */
-  padding: 188px 0; /* Відступи всередині секції */
+  background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-section .container {
@@ -129,34 +125,33 @@ img {
   font-size: 56px;
   line-height: 1.07;
   color: #ffffff;
-  max-width: 496px; /* Ширина тексту заголовка */
-  margin-bottom: 40px; /* Відступ від заголовка до кнопки */
+  max-width: 496px;
+  margin-bottom: 40px;
 }
 
 .hero-button {
-  display: block; /* Для центрування через margin */
-  min-width: 169px; /* Мінімальна ширина кнопки */
-  height: 56px; /* Висота кнопки */
-  border: none; /* Вимкнення стандартного оформлення */
-  background-color: var(--btn-bg-color, #4d5ae5); /* Фон кнопки */
-  border-radius: 4px; /* Заокруглення країв */
-  color: #ffffff; /* Колір тексту */
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--btn-bg-color, #4d5ae5);
+  border-radius: 4px;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  cursor: pointer; /* Зміна курсора */
-  padding: 0 20px; /* Внутрішні відступи */
+  cursor: pointer;
+  padding: 0 20px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf; /* Темніший фон при ховері */
+  background-color: #404bbf;
 }
 
-/* Друга секція (Services Section) */
 .services-section {
-  padding: 120px 0; /* Відступи всередині секції */
+  padding: 120px 0;
 }
 
 .services-section .container {
@@ -179,15 +174,15 @@ img {
 }
 
 .services-list {
-  display: flex; /* Горизонтальне розташування елементів */
-  gap: 24px; /* Відступи між пунктами */
+  display: flex;
+  gap: 24px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .services-item {
-  flex-basis: calc((100% - 3 * 24px) / 4); /* Ширина елементів списку */
+  flex-basis: calc((100% - 3 * 24px) / 4);
   text-align: center;
 }
 
@@ -197,7 +192,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px; /* Відступ між заголовком і текстом */
+  margin-bottom: 8px;
 }
 
 .services-description {
@@ -207,10 +202,8 @@ img {
   color: #434455;
 }
 
-/* Секція команди */
-/* Секція команди (Team Section) */
 .team-section {
-  padding: 120px 0; /* Відступи всередині секції */
+  padding: 120px 0;
   background-color: #f4f4fd;
 }
 
@@ -220,24 +213,24 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 72px; /* Відступ між заголовком і списком */
+  margin-bottom: 72px;
 }
 
 .team-list {
-  display: flex; /* Горизонтальне розташування елементів */
-  gap: 24px; /* Відступи між елементами списку */
+  display: flex;
+  gap: 24px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .team-item {
-  flex-basis: calc((100% - 3 * 24px) / 4); /* Ширина елементів */
+  flex-basis: calc((100% - 3 * 24px) / 4);
   text-align: center;
-  border-radius: 0 0 4px 4px; /* Заокруглення нижніх кутів */
-  overflow: hidden; /* Щоб уникнути виходу контенту за межі */
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
   background-color: #ffffff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тінь для картки */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .team-photo {
@@ -247,7 +240,7 @@ img {
 }
 
 .team-info {
-  padding: 32px 0; /* Відступи всередині контейнера */
+  padding: 32px 0;
 }
 
 .team-name {
@@ -255,7 +248,7 @@ img {
   font-weight: 500;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 8px; /* Відступ між ім'ям і роллю */
+  margin-bottom: 8px;
 }
 
 .team-role {
@@ -265,9 +258,8 @@ img {
   color: #434455;
 }
 
-/* Секція портфоліо */
 .portfolio-section {
-  padding: 120px 0; /* Відступи всередині секції */
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -275,26 +267,26 @@ img {
   line-height: 1.11;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 72px; /* Відступ між заголовком і списком */
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
-  display: flex; /* Горизонтальне розташування елементів */
-  flex-wrap: wrap; /* Перенос на новий рядок при нестачі місця */
-  column-gap: 24px; /* Горизонтальні відступи між елементами */
-  row-gap: 48px; /* Вертикальні відступи між елементами */
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 48px) / 3); /* Ширина елемента списку */
+  flex-basis: calc((100% - 48px) / 3);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 0 0 4px 4px; /* Заокруглення нижніх кутів */
-  overflow: hidden; /* Щоб уникнути виходу контенту */
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
 }
 
 .portfolio-image {
@@ -304,9 +296,9 @@ img {
 }
 
 .portfolio-info {
-  padding: 32px 16px; /* Відступи всередині контейнера */
-  border: 1px solid #e7e9fc; /* Обведення */
-  border-top: none; /* Видалення верхнього обведення */
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
   text-align: center;
 }
 
@@ -314,7 +306,7 @@ img {
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
-  margin-bottom: 8px; /* Відступ між заголовком і текстом */
+  margin-bottom: 8px;
 }
 
 .portfolio-product-category {
@@ -323,10 +315,9 @@ img {
   color: #434455;
 }
 
-/* Футер */
 .footer {
-  padding: 100px 0; /* Відступи всередині футера */
-  background-color: #2e2f42; /* Фоновий колір футера */
+  padding: 100px 0;
+  background-color: #2e2f42;
   text-align: center;
 }
 
@@ -337,21 +328,20 @@ img {
 }
 
 .footer-logo {
-  display: inline-block; /* Блочні властивості для посилання */
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5; /* Колір тексту посилання */
-  text-decoration: none; /* Вимкнення підкреслення */
-  margin-bottom: 16px; /* Відступ між посиланням і текстом */
+  color: #4d5ae5;
+  text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .footer-logo-span {
-  display: inline-block; /* Блочні властивості для посилання */
-  color: #f4f4fd; /* Колір другої частини тексту логотипа */
+  color: #f4f4fd;
 }
 
 .footer-text {
@@ -359,8 +349,8 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f4f4fd; /* Колір тексту */
+  color: #f4f4fd;
   letter-spacing: 0.02em;
-  max-width: 264px; /* Максимальна ширина тексту */
-  margin: 0 auto; /* Центрування тексту */
+  max-width: 264px;
+  margin: 0 auto;
 }
