@@ -20,6 +20,24 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
 .container {
   width: 1158px;
   max-width: 100%;
@@ -69,6 +87,7 @@ img {
 }
 
 .header-link {
+  display: block;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -200,6 +219,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: start;
 }
 
 .team-section {
@@ -319,7 +339,6 @@ img {
 .footer {
   padding: 100px 0;
   background-color: #2e2f42;
-  text-align: center;
 }
 
 .footer-logo {
@@ -347,5 +366,5 @@ img {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin: 0 auto;
+  margin: 0;
 }
